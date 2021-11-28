@@ -1,4 +1,3 @@
-
 function node_Add(){
     const data ={name:"Emp01"};
     db_Add(data).then(
@@ -14,8 +13,6 @@ function db_Add(){
     return new Promise((resolve, reject)=>{
         resolve ("success");
     });
-
-
 }
 node_Add();
    
