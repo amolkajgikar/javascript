@@ -5,7 +5,7 @@
     this.course = course;
 }
 Student.prototype.add = function() {
-    console.log('ADDt')
+    console.log('ADD')
 }
 Student.prototype.get = function() {
     console.log('GET')

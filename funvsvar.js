@@ -10,3 +10,4 @@ console.log(typeof functionPrint);
 // const - something which never change
 
 functionPrint(10, 20);
+//const x = function (a, b) {return a * b};
