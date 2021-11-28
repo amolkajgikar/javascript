@@ -5,6 +5,6 @@ function sum(num1,num2){
 }
 // we can store result in constant or variable as give below
 //const result=sum(10,30);
-var result=sum(10,40);
-
+//var result=sum(10,40);
+sum(20,40);
 //console.log(result);
