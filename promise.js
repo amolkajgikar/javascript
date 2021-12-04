@@ -1,18 +1,28 @@
 function node_Add(){
-    const data ={name:"Emp01"};
-    db_Add(data).then(
-        (value)=>{
-            console.log("data is printed");
-        });
-        (err=>{
-            console.log("Error occured");
-        }
-        );
+    // calling asynchronous
+    db_Add().then(
+        (value)=>{ console.log("Success");},
+        (err)=>{console.log("Error");});
+    doSomething();
+    doSomething();
+    doSomething();
+    doSomething();
 }
+
+function doSomething(){
+    console.log("Doing something");
+}
+
 function db_Add(){
     return new Promise((resolve, reject)=>{
-        resolve ("success");
+        // add data
+        setTimeout(resolve, 5000);
+        // if(err){
+        //     reject(err);
+        // }
+        
     });
 }
+
 node_Add();
    
